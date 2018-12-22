@@ -7,12 +7,14 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import kr.tjeit.listveiw02_20181222_03.adapters.StoreAdapter;
 import kr.tjeit.listveiw02_20181222_03.datas.Store;
 
 public class MainActivity extends  BaseActivity {
 
     ListView storeListView;
     List<Store> storeList = new ArrayList<Store>();
+    StoreAdapter mAdapter;
 
 
     @Override
@@ -35,6 +37,9 @@ public class MainActivity extends  BaseActivity {
     public void setValues() {
 
         fillStores();
+
+        mAdapter = new StoreAdapter(mContext, storeList);
+        storeListView.setAdapter(mAdapter);
 
 
 
