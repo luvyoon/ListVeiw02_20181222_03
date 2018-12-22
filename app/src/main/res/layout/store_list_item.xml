@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:background="#FFFFFF"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
     android:orientation="vertical">
 
     <LinearLayout
@@ -62,6 +64,8 @@
                     android:layout_weight="1"/>
 
                 <Button
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
                     android:id="@+id/StoreBtn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"

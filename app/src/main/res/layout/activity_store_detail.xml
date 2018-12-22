@@ -31,6 +31,7 @@
             android:text="Name"/>
 
         <TextView
+            android:id="@+id/nameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -51,6 +52,7 @@
             android:text="Address"/>
 
         <TextView
+            android:id="@+id/addressTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -68,9 +70,10 @@
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="open time"/>
+            android:text="Open and Close time"/>
 
         <TextView
+            android:id="@+id/openTimeTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
