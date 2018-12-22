@@ -44,7 +44,7 @@ public class StoreAdapter extends ArrayAdapter<StoreAdapter> {
         TextView storeAddressTxT= row.findViewById(R.id.storeAddressTxT);
         TextView StoreBtn= row.findViewById(R.id.StoreBtn);
 
-        Store data = mList.get(position);
+        final Store data = mList.get(position);
 
         storeNameTxt.setText(data.getName());
         storeAddressTxT.setText(data.getAddress());
@@ -53,7 +53,7 @@ public class StoreAdapter extends ArrayAdapter<StoreAdapter> {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(mContext, "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, data.getPhoneNum()+"에게 전화겁니다", Toast.LENGTH_SHORT).show();
                 
             }
         });
