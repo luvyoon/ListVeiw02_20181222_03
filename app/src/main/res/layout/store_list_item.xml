@@ -37,6 +37,7 @@
                     >
 
                     <TextView
+                        android:id="@+id/storeNameTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="서향"
@@ -45,6 +46,7 @@
                         android:textSize="18sp"
                         />
                     <TextView
+                        android:id="@+id/storeAddressTxT"
                         android:layout_marginTop="3dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -60,9 +62,10 @@
                     android:layout_weight="1"/>
 
                 <Button
+                    android:id="@+id/StoreBtn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                   android:text="전화">
+                   android:text="전화"/>
 
             </LinearLayout>
 
