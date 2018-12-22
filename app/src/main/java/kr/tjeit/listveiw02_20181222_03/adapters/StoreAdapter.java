@@ -13,18 +13,18 @@ import java.util.List;
 import kr.tjeit.listveiw02_20181222_03.R;
 import kr.tjeit.listveiw02_20181222_03.datas.Store;
 
-public class StoreAdapter extends ArrayAdapter<StoreAdapter> {
+public class StoreAdapter extends ArrayAdapter<Store> {
 
     Context mContext;
     List<Store> mList;
     LayoutInflater inf;
 
-    public StoreAdapter(Context mContext, List<StoreAdapter> mList){
+    public StoreAdapter(Context mContext, List<Store> mList){
 
-        super(mContext,R.layout.store_list_item,mList);
+        super(mContext, R.layout.store_list_item, mList);
 
         this.mContext=mContext;
-        this.mList = mList;
+        this.mList =mList;
         this.inf = LayoutInflater.from(mContext);
 
 
